@@ -7,9 +7,10 @@ Create a new environment with conda and install the package from environment.yml
 conda env create -f environment.yml
 
 
-For **Linux**, **Mac OS** and **Windows** create enviornment
+For **Linux**, **Mac OS** and **Windows** create environment
 
-   conda env create -f environment.yml
+   
+   	conda env create -f environment.yml
 
 	
 ### Execution
