@@ -1,0 +1,22 @@
+name: OLC-Web
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10
+  - loguru
+  - leafmap
+  - imageio
+  - torchvision
+  - torchaudio
+  - pytorch-cuda=11.7
+  - pytorch
+  - scikit-learn
+  - h5py
+  - umap-learn
+  - numba
+  - streamlit==1.26.0
+  - streamlit-plotly-events==0.0.6
+  - streamlit-vega-lite==0.1.0
+
+prefix: /home/ws2/anaconda3/envs/OLC-Web
