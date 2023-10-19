@@ -3,52 +3,21 @@
 ## Usage
 ### Installation
 #### Install from pip
-Create a new environment with conda and install the package
+Create a new environment with conda and install the package from environment.yml file
+conda env create -f environment.yml
 
 
-For **Linux** start the environment with [spec-file.txt](https://drive.google.com/file/d/1nlOqspBrnl5kiErudW6NtHTt3nFCTPJH/view?usp=sharing)
+For **Linux**, **Mac OS** and **Windows** create enviornment
 
-	conda create --name OpenLabCluster --file spec-file.txt
-	conda activate OpenLabCluster
-	pip install openlabcluster
-	
-for **Mac OS** and **Windows**
+   conda env create -f environment.yml
 
-	conda create --name OpenLabCluster python=3.7
-	conda activate OpenLabCluster
-	pip install 'openlabcluster[gui]'
-	 
-	
-<!---##### Troubleshooting for Linux installation
-If, for some reason, `wxPython` fails to install on Linux, run `sudo apt install libsdl2-dev build-essential libgtk-3-dev make gcc libgtk-3-dev libwebkitgtk-dev libwebkitgtk-3.0-dev libgstreamer-gl1.0-0 freeglut3 freeglut3-dev python-gst-1.0 python3-gst-1.0 libglib2.0-dev ubuntu-restricted-extras libgstreamer-plugins-base1.0-dev`. Then, use `pip install -U -f https://extras.wxpython.org/wxPython4/extras/linux/gtk3/<your operating system>  wxPython` to install it. To determine your exact link, go to https://extras.wxpython.org/wxPython4/extras/linux/gtk3/ and select the right folder (copy the link from the search bar). 
-	
-#### Install the Required Package from Environment File	
-Git clone the entire package
-Create a new  enviornment.yml file
-If you are using **Linux**
-	
-	conda env create -f environment.yml
-	
-if you are using **Mac-os**
-	
-	conda env create -f env-mac2.yml
---->
-	
 	
 ### Execution
 
-Run the following for **Linux**
+Run the following for **Linux** and **Mac-OS**
 	
 	streamlit run main_page.py
 
-Run the following for **Mac-OS**
-
-	conda install python.app
-	pythonw -m openlabcluster
-
-Run the following for **Windows**
-
-	pythonw.exe -m openlabcluster
 		
 ### Run a Demo
 
