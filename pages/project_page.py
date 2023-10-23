@@ -5,8 +5,8 @@ Copyright (c) 2022-2023 University of Washington. Developed in UW NeuroAI Lab by
 import streamlit as st
 import numpy as np
 from st_pages import add_page_title
-from sub_pages.load_project_page import Load_Project
-from sub_pages.creat_new_project import Create_New_Project
+from pages.sub_pages.load_project_page import Load_Project
+from pages.sub_pages.creat_new_project import Create_New_Project
 
 add_page_title()
 

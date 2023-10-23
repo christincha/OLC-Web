@@ -6,7 +6,7 @@ import os
 import  datetime
 import streamlit as st
 
-from sub_pages.page import Page
+from pages.sub_pages.page import Page
 from utils.config_utils import get_default_config
 
 class Create_New_Project(Page):
@@ -29,7 +29,7 @@ class Create_New_Project(Page):
             os.mkdir(project_directory)
         cur_time = datetime.datetime.now()
 
-        # Creates curren project
+        # Creates new project
         if project_name:
             cur_project_path = os.path.join(project_directory, f'{project_name}-{cur_time.year}-{cur_time.day}-{cur_time.month}')
             st.session_state.project_path = cur_project_path
@@ -76,5 +76,6 @@ class Create_New_Project(Page):
                              'train':data_file_name, 'data_path':data_folder_path}
             get_default_config(st.session_state.project_path, project_name, **config_kwargs)
 
+            next_page = st.button("Go to Cluster Map")
     def file_dir(self):
         return self.cur_project_path

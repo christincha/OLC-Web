@@ -3,7 +3,7 @@ OpenLabCluster: Active Learning Based Clustering and Classification of Animal Be
 Copyright (c) 2022-2023 University of Washington. Developed in UW NeuroAI Lab by Jingyuan Li.
 """
 import streamlit as st
-from sub_pages.page import Page
+from pages.sub_pages.page import Page
 from utils.config_utils import load_cfg_file
 
 class Load_Project(Page):
@@ -25,6 +25,7 @@ class Load_Project(Page):
             load_cfg_file(file)
             self.cur_project_path = st.session_state.config_dict['Project_folders']['project_path']
             st.write('Project Directory', self.cur_project_path)
+        next_page = st.button("Go to Cluster Map")
 
     def file_dir(self):
         return self.cur_project_path
