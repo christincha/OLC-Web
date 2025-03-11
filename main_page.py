@@ -11,7 +11,6 @@ st.set_page_config(layout="wide")
 show_pages(
     [Page("main_page.py", "OpenLabCluster Home Page", "🏠"),
      Page("pages/project_page.py", "Project Manager"),
-     Section("Model Learner"),
      Page("pages/clustering_page.py", "Cluster Map"),
      Page("pages/classification_page.py", "Behavior Classification Map")
      ]
