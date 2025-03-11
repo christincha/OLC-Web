@@ -7,10 +7,18 @@ Create a new environment with conda and install the package from environment.yml
 conda env create -f environment.yml
 
 
-For **Linux**, **Mac OS** and **Windows** create environment
+For **Linux**, **Mac OS** and **Windows** create environment (required conda version > 24.9.2)
 
-   
    	conda env create -f environment.yml
+
+For windows users, following packages might need to be installed manually
+
+      pip install streamlit==1.26.0
+      pip install umap-learn
+      pip install streamlit-plotly-events
+      pip install opencv-python
+      pip install st_pages==v0.4.1
+      conda install pytorch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 cpuonly -c pytorch
 
 	
 ### Execution
