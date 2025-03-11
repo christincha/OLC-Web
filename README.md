@@ -27,6 +27,8 @@ Run the following for **Linux** and **Mac-OS**
 	
 	streamlit run main_page.py
 
+Open the link in your browser (Chrome is preferred)
+
 		
 ### Run a Demo
 
