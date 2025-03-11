@@ -33,7 +33,7 @@ Open the link in your browser (Chrome is preferred)
 ### Run a Demo
 
 #### Create Demo Project
-1. Download the *openlabcluster_example* folder from [here](https://drive.google.com/file/d/1UYtgbnTRrTQOtSAQUC0otix6RMpDvfYs/view?usp=sharing)
+1. Download the *openlabcluster_example* folder from [here](https://drive.google.com/file/d/1N-NMLGSkYTiS1lIRg8jwEZjoORDx_W6p/view?usp=sharing)
 1. Go to *your_download-dir/openlabcluster_example* folder run 
 		
 		python3 prepare_video_list.py
