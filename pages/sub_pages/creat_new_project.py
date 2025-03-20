@@ -59,6 +59,11 @@ class Create_New_Project(Page):
             gpu_state = st.checkbox("USE GPU")
             if gpu_state:
                 device  = 'cuda'
+                try:
+                    torch.cuda.is_available()==True               
+                except:
+                    device = 'cpu'
+                    
             else:
                 device = 'cpu'
             # User input for feature length
