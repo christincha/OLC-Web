@@ -114,6 +114,8 @@ class train_iter_network(Thread):
         self.epoch = self.epochs if self.epochs is not None else self.cfg['Training']["su_epoch"]
 
         self.device = self.cfg['Training']['device']
+        if not torch.cuda.is_available():
+            self.device == 'cpu'
         self.percentage = 1
         self.few_knn = False
         # Global variable
