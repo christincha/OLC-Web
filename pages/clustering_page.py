@@ -133,6 +133,8 @@ if st.session_state.counter_clustering == 0:
     st.session_state.data = data
 else:
     work = st.session_state.work
+    data = work.plot_data(st.session_state.cur_epoch)
+    st.session_state.data = data
 
 if sc_event:
     # Re-initializes the training worker
