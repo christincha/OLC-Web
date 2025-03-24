@@ -27,4 +27,4 @@ with st.spinner(f"{selection} ..."):
     page()
     # Gets directory of current project
     st.session_state.file_directory = page.file_dir()
-    print(st.session_state.file_directory)
+    print('project directory:', st.session_state.file_directory)
