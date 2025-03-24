@@ -45,7 +45,7 @@ Make sure you follow the steps: (1) Project Manager -> (2) Cluster Map -> (3) Be
 3. Go to **Project Manager**
 4. Chose the project loading method: Create New Project 
 5. Set Project Name: e.g., demo 
-6. Enter the directory to keypoints or precomputed kinematics, e.g., your_download_dir/openlabcluster_example/demo_data.h5 (/home/ws2/OLC_Project/openlabcluster_example)
+6. Enter the directory to keypoints or precomputed kinematics, e.g., your_download_dir/openlabcluster_example (/home/ws2/OLC_Project/openlabcluster_example)
 7. Enter the filename of keypoints or precomputed kinematics (h5 file) , e.g., demo.h5 
 8. Click *Load Video Segments Name List*, choose the file: your_download_dir/openlabcluster_example/video_segmetns_names.text 
 9. Uncheck *Check to use GPU*, if GPU is not available. 
