@@ -196,7 +196,6 @@ if dim_red_method != st.session_state['dim_red_method'] or num_cm_d != st.sessio
 col1, col2 = st.columns(2)
 
 # Scatter Plot
-st.empty()
 with col1:
     selected_sample = None
     st.markdown("##### Cluster Map")
