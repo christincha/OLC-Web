@@ -28,6 +28,7 @@ Run the following for **Linux** and **Mac-OS**
 	streamlit run main_page.py
 
 Open the link in your browser (Chrome is preferred)
+Make sure you follow the steps: (1) Project Manager -> (2) Cluster Map -> (3) Behavior Classification Map. 
 
 		
 ### Run a Demo
