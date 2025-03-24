@@ -133,12 +133,16 @@ if 'classification_page' in st.session_state and st.session_state['classificatio
 
     if st.session_state.counter_cla == 0:
         # Initializes training worker
-        work = train_iter_network(
-            config=st.session_state.config_dict, sample_method=al_method, num_sample=num_per_sel,
-            reducer_name=dim_red_method_cla
-        )
-        st.session_state.work_cla = work
-        st.session_state.counter_cla = 1
+        try:
+            work = train_iter_network(
+                config=st.session_state.config_dict, sample_method=al_method, num_sample=num_per_sel,
+                reducer_name=dim_red_method_cla
+            )
+            st.session_state.work_cla = work
+            st.session_state.counter_cla = 1
+        except:
+
+            st.error('Make sure the project is correctly initialized and you have performed "Start Clustering" on Cluster Map page.')
 
     else:
         work = st.session_state.work_cla
