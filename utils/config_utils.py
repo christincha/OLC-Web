@@ -98,8 +98,11 @@ def get_default_config(project_path, project_name, **kwargs):
                 defaut_config[groups][key] = kwargs[key]
                 break
     st.session_state.config_dict = defaut_config
-    with open(config_dir, 'w') as f:
-        yaml.dump(defaut_config, f)
+    try:
+        with open(config_dir, 'w') as f:
+            yaml.dump(defaut_config, f)
+    except:
+        ValueError('Enter all the information to continue')
 
     for subfolder_key in ['model_path',
                         'output_path',
@@ -108,9 +111,13 @@ def get_default_config(project_path, project_name, **kwargs):
                         'sample_path',
                           'video_path']:
         subfolder = defaut_config['Project_folders'][subfolder_key]
+        print(subfolder_key)
         print(subfolder)
         if not os.path.exists(subfolder):
-            os.mkdir(subfolder)
+            try:
+                os.mkdir(subfolder)
+            except:
+                FileExistsError('Enter data directory first.')
 
 
 def load_cfg_file(cfg_file_buffer):
