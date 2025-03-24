@@ -114,7 +114,7 @@ class train_unsup_network(Thread):
 
         self.device = cfg['Training']['device']
         if not torch.cuda.is_available():
-            self.device == 'cpu'
+            self.device = 'cpu'
         self.percentage = 1
         self.few_knn = False
 
