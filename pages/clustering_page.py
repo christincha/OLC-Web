@@ -118,23 +118,26 @@ with col24:
 
 if st.session_state.counter_clustering == 0:
     # Initializes the training worker
-    work = train_unsup_network(
-        st.session_state.config_dict,
-        displayiters=num_cm_update,
-        saveiters=num_cm_update,
-        maxiters=num_m_ep,
-        reducer_name=dim_red_method,
-        dimension=num_cm_d,
-        continue_training=True
-    )
-    st.session_state.work = work
-    st.session_state.counter_clustering += 1
-    data = work.plot_data(st.session_state.cur_epoch)
-    st.session_state.data = data
+    try:
+        work = train_unsup_network(
+            st.session_state.config_dict,
+            displayiters=num_cm_update,
+            saveiters=num_cm_update,
+            maxiters=num_m_ep,
+            reducer_name=dim_red_method,
+            dimension=num_cm_d,
+            continue_training=True
+        )
+        st.session_state.work = work
+        st.session_state.counter_clustering += 1
+        data = work.plot_data(st.session_state.cur_epoch)
+        st.session_state.data = data
+    except:
+        st.error('Project is not defined. Initialize project first!')
 else:
     work = st.session_state.work
-    data = work.plot_data(st.session_state.cur_epoch)
-    st.session_state.data = data
+    #data = work.plot_data(st.session_state.cur_epoch)
+    #st.session_state.data = data
 
 if sc_event:
     # Re-initializes the training worker
@@ -193,6 +196,7 @@ if dim_red_method != st.session_state['dim_red_method'] or num_cm_d != st.sessio
 col1, col2 = st.columns(2)
 
 # Scatter Plot
+st.empty()
 with col1:
     selected_sample = None
     st.markdown("##### Cluster Map")
@@ -203,7 +207,11 @@ with col1:
     #         # Updates the data using the work if is not due to the click_rerun and training
 
     # Prepares data for scatter plot
-    data = query_data(st.session_state.data)
+    try:
+        data = query_data(st.session_state.data)
+    except:
+        data = work.plot_data(st.session_state.cur_epoch)
+        data = query_data(st.session_state.data)
     current_query, selected_sample = render_plotly_ui(data)
     rerun = update_state(current_query, data)
     if rerun and not st.session_state.training_on:
