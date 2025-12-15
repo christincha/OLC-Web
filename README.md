@@ -55,14 +55,14 @@ Notice: if you browser is in dark mode, switch to ligth mode for better visibili
 4. Chose the project loading method: Create New Project 
 5. Set Project Name: e.g., demo 
 6. Enter the directory to keypoints or precomputed kinematics, e.g., your_download_dir/openlabcluster_example (/home/ws2/OLC_Project/openlabcluster_example)
-7. Enter the filename of keypoints or precomputed kinematics (h5 file) , e.g., demo.h5 
+7. Enter the filename of keypoints or precomputed kinematics (h5 file) , e.g., demo_data.h5 
 8. Click *Load Video Segments Name List*, choose the file: your_download_dir/openlabcluster_example/video_segmetns_names.text 
 9. Uncheck *Check to use GPU*, if GPU is not available. 
 10. Set Feature Length = 16 
 11. Go to **Cluster Map**
 
 #### Start the Demo Project:
-1. Go to **Manage Project** panel, 
+1. Go to **Project Manager** panel, 
 2. Chose the project loading method: Load Project
 3. Select the config file as */your_home_dir/OLC_Project/project_name/config.yaml*
 4. Go to **Cluster Map**
@@ -70,7 +70,7 @@ Notice: if you browser is in dark mode, switch to ligth mode for better visibili
 
 #### Cluster Map:
 1. Click **Start Clustering** button to start unsupervised clustering. 
-2. Click **Go To Classification** when unsupervised clustering is finished, then go to **Behavior Classification Map** panel.
+2. Click **Go To Classification** when unsupervised clustering is finished, then manually clicking **Behavior Classification Map** on the left panel to go to the page.
 
 #### Behavior Classification Map: 
 1. The scatter plot indicating sample clusters is initialized on the bottom left, with suggested samples for annotation.
