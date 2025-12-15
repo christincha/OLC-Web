@@ -1,5 +1,14 @@
 # OpenLabCluster
 
+**OpenLabCluster (OLC-Web)** is an open-source tool designed for the unsupervised clustering and semi-supervised classification of behavioral data using kinematics (keypoints). It simplifies behavior analysis by combining dimensionality reduction, clustering algorithms, and interactive visualization into a user-friendly web interface.
+
+## Core Functions
+
+* **Project Management**: Easily create new projects or load existing ones, manage kinematic data (e.g., from DeepLabCut), and configure settings via a GUI.
+* **Unsupervised Clustering**: Automatically group similar behaviors using dimensionality reduction (PCA, tSNE, UMAP) and clustering algorithms, visualized in an interactive 2D/3D map.
+* **Semi-Supervised Classification**: Train models to recognize behaviors by interactively labeling a small set of suggested samples, then apply the model to classify the rest of the data.
+* **Interactive Visualization**: View cluster maps and behavior classification maps that link data points directly to video segments for easy verification and analysis.
+
 ## Usage
 ### Installation
 #### Install from pip
