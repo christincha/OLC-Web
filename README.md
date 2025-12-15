@@ -58,14 +58,15 @@ Notice: if you browser is in dark mode, switch to ligth mode for better visibili
 7. Enter the filename of keypoints or precomputed kinematics (h5 file) , e.g., demo_data.h5 
 8. Click *Load Video Segments Name List*, choose the file: your_download_dir/openlabcluster_example/video_segmetns_names.text 
 9. Uncheck *Check to use GPU*, if GPU is not available. 
-10. Set Feature Length = 16 
-11. Go to **Cluster Map**
+10. Set Feature Length = 16.
+11. Go to **Cluster Map**.
 
 #### Start the Demo Project:
 1. Go to **Project Manager** panel, 
-2. Chose the project loading method: Load Project
-3. Select the config file as */your_home_dir/OLC_Project/project_name/config.yaml*
-4. Go to **Cluster Map**
+2. Chose the project loading method: Load Project.
+3. Select the config file as */your_home_dir/OLC_Project/project_name/config.yaml*.
+4. Go to **Cluster Map**.
+5. **Notice** avoid going back the the **Project Manager** panel, unless you want to start a new project session.  
 
 
 #### Cluster Map:
@@ -74,8 +75,9 @@ Notice: if you browser is in dark mode, switch to ligth mode for better visibili
 
 #### Behavior Classification Map: 
 1. The scatter plot indicating sample clusters is initialized on the bottom left, with suggested samples for annotation.
-2. Label samples on the bottom right panel.
-3. Click **Run Classification**, and start classification.
+2. Use cursor to select the closest point along the horizontal axis.
+3. Label samples on the bottom right panel.
+4. Click **Run Classification**, and start classification.
 
 
 ### Manage Project (Start a New Project or Load Earlier Project) Detailed Description
