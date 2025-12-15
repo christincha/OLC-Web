@@ -39,11 +39,11 @@ Run the following for **Linux** and **Mac-OS**
 Open the link in your browser (Chrome is preferred).
 
 Make sure you follow the steps: (1) Project Manager -> (2) Cluster Map -> (3) Behavior Classification Map. 
-
+Notice: if you browser is in dark mode, switch to ligth mode for better visibility. 
 		
 ### Run a Demo
 
-#### Create Demo Project
+#### Create a Demo Project
 1. Download the *openlabcluster_example* folder from [here](https://drive.google.com/file/d/1N-NMLGSkYTiS1lIRg8jwEZjoORDx_W6p/view?usp=sharing)
 1. Go to *your_download-dir/openlabcluster_example* folder run 
 		
